@@ -11,7 +11,7 @@ variable "domain_name" {
 }
 
 variable "component" {
-    type = "string"
+    type = string
 }
 
 variable "zone_id" {
