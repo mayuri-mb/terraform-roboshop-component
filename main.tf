@@ -1,5 +1,5 @@
 #creates instance
-resource "aws_instance" "this" {
+resource "aws_instance" "main" {
     ami = local.ami_id
     instance_type = "t3.micro"
     subnet_id = local.private_subnet_id
