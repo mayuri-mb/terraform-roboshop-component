@@ -63,7 +63,7 @@ resource "aws_ami_from_instance" "main" {
 #creates LB target group
 resource "aws_lb_target_group" "main" {
     name = "${var.project}-${var.environment}-${var.component}"
-    port = local.port_no
+    port = local.port_number
     protocol = "HTTP"
     vpc_id = local.vpc_id 
 
